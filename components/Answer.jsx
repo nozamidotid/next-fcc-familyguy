@@ -56,10 +56,10 @@ export const Answer = ({ answers, questionId }) => {
                 disabled={data || loading}
                 onClick={() => setSeleceted(item)}
                 className={cn(
-                  'p-2 rounded-md  items-center justify-between w-full flex text-sm font-semibold disabled:cursor-not-allowed transition-all',
+                  'p-2 rounded-md items-center text-white justify-between w-full flex text-sm font-semibold disabled:cursor-not-allowed transition-all',
                   isLoading && 'animate-pulse',
                   isWrong ? 'bg-red-700' : 'bg-slate-800',
-                  isCorrect && 'outline text-green-500',
+                  isCorrect && 'bg-green-700',
                 )}
               >
                 {item}
